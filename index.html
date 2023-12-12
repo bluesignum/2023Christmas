@@ -2,144 +2,40 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, initial-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
+    name="viewport" />
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://grayson-choi.github.io/advent_calendar/">
-  <meta property="og:title" content="크리스마스 디데이 캘린더">
+  <meta property="og:url" content="https://bluesignum.github.io/2023Christmas/">
+  <meta property="og:title" content="2023 크리스마스 캘린더">
   <meta property="og:image" content="image/OGimage.png">
-  <meta property="og:description" content="크리스마스까지 하루가 기다려지는 즐거움, 크리스마스 디데이 캘린더를 함께 만들어봐요!">
-  <meta property="og:site_name" content="SCC Advent Calendar">
+  <meta property="og:description" content="깜짝선물 도착!">
+  <meta property="og:site_name" content="2023 크리스마스 D-day 캘린더">
   <meta property="og:locale" content="en_US">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <title>Sparta Advend Calendar 2023</title>
+  <title>2023 크리스마스</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="snow.css">
+  <!-- <link rel="stylesheet" href="snow.css"> -->
   <link rel="stylesheet" href="share.css">
   <link rel="stylesheet" href="music.css">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="alert.css">
 </head>
 
 <body>
   <!-- 이 곳에 뼈대 코드를 입력! -->
   <div class="snow-wrap">
-    <div>
-    </div>
+    <div></div>
   </div>
   <section class="grid-1">
     <div class="title flex-col item-baseline">
       <img src="image/merry.png">
-      <div class="countdown">
-        크리스마스까지 남은 시간 <span id="countdown" class="countdown"></span>
+      <div class="countdown" style="margin-bottom: 8px; font-weight: bold;">
+        크리스마스까지 남은 시간
       </div>
-    </div>
-    <div class="day-1">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">1</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-2">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">2</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-3">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">3</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-4">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">4</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-5">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">5</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-6">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">6</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-7">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">7</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-8">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">8</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
-    </div>
-    <div class="day-9">
-      <label>
-        <input type="checkbox">
-        <div class="door">
-          <div class="front">
-            <span class="date-num">9</span>
-          </div>
-          <div class="back"></div>
-        </div>
-
-      </label>
+      <div style="margin-bottom: 28px; font-weight: bold;"><span id="countdown" class="countdown"></span></div>
     </div>
     <div class="day-10">
       <label>
@@ -321,22 +217,31 @@
 
       </label>
     </div>
+    <div class="day-25">
+      <label>
+        <input type="checkbox">
+        <div class="door">
+          <div class="front">
+            <span class="date-num">25</span>
+          </div>
+          <div class="back"></div>
+        </div>
+
+      </label>
+    </div>
   </section>
   <footer>
-    <!-- <div class="flex-row">
-      <button id="shareButton">공유하기</button>
-    </div> -->
     <div class="flex-row">
       <audio class="bgm" src="carol.mp3" preload="auto" style="display: none;"></audio>
       <div class="sound"></div>
       <div class="sound stop"></div>
     </div>
-    <p class="copyright"> 2023년 겨울, 정현☃️</p>
+    <p class="copyright" style="font-size: 13px;">2023년 겨울, 정현</p>
   </footer>
   <script src="index.js"></script>
-  <script src="share.js"></script>
   <script src="music.js"></script>
   <script src="countdown.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>

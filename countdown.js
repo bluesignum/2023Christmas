@@ -36,17 +36,18 @@ doors.forEach((door, index) => {
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
 
     // 각 날짜에 해당하는 날짜를 계산
-    const openDate = new Date(2023, 11, index + 1); // 2023년 12월 1일부터 시작
+    const openDate = new Date(2023, 11, index + 10); // 2023년 12월 1일부터 시작
 
     // 현재 날짜가 열 수 있는 날짜 이후인지 확인
     if (now.getTime() > openDate.getTime()) {
       // 여기에 모달을 열거나 특정 동작을 수행하는 코드 추가
 
       // 상위 div의 class 번호를 찾아서 image url에 사용합니다
-      const imageUrl = `image/card/card-${index + 1}.png`;
+      const imageUrl = 'image/smalltree.png';
+      // const imageUrl = `image/card/card-${index + 10}.png`;
 
       // 'back' 클래스를 가진 요소를 찾아 스타일을 가져옵니다.
-      const doorDiv = document.querySelector(`.day-${index + 1}`)
+      const doorDiv = document.querySelector(`.day-${index + 10}`)
       const backDiv = doorDiv.querySelector(`.back`);
 
       const style = window.getComputedStyle(backDiv);
@@ -61,7 +62,13 @@ doors.forEach((door, index) => {
       // 현재 날짜가 열 수 있는 날짜보다 이전인 경우 몇 일 후에 열 수 있다는 메시지를 표시
       const daysRemaining = Math.ceil((openDate - now) / (1000 * 60 * 60 * 24));
       console.log(openDate, now, daysRemaining)
-      alert(`이 카드는 ${daysRemaining}일 후에 열 수 있어요!`);
+      swal({
+        title: "안녕!",
+        text: `이 카드는 ${daysRemaining}일 후에 열 수 있어 :)`,
+        button: "앗, 알겠어",
+      });
+      // <a href="#" onclick="swal('알림창2 제목','알림창2 내용')">클릭</a>
+      // alert(`이 카드는 ${daysRemaining}일 후에 열 수 있어요!`);
     }
   });
 });

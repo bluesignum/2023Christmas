@@ -19,7 +19,7 @@ function showModal(imageUrl, text) {
   image.style.backgroundImage = `url(${imageUrl})`;
   image.alt = 'Door Image';
   image.style.width = '100%';
-  image.style.height = '211px';
+  image.style.height = '120px';
 
   // 텍스트를 표시할 요소를 생성합니다.
   const textElement = document.createElement('p');
@@ -69,4 +69,3 @@ const modalMessageList = [
   { "number": 23, "message": "다 함께하는 24일, 행복한 느낌이 가득할 거예요." },
   { "number": 24, "message": "12월, 모두에게 기쁨과 행복이 넘치는 달이에요." }
 ];
-

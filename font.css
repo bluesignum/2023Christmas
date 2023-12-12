@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Pretendard';
+  /*font 이름*/
+  font-style: 'Medium';
+  /* font 스타일 정의 (기울임, 일반) */
+  font-weight: 400;
+  /* font 굵기 정의 */
+  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+  src: url('font/Pretendard-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Beeunhye';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Beeunhye.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'SlowSlow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/SlowSlow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

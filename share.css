@@ -1,7 +1,7 @@
 /* footer styles */
 footer {
   text-align: center;
-  padding: 2em 0;
+  padding: 0 0 2em 0;
   color: white;
 
   display: flex;
@@ -11,7 +11,7 @@ footer {
 }
 
 button {
-  padding: 0.8em;
+  /* padding: 0.8em; */
   font-size: 100%;
   color: white;
   border: none;
@@ -20,7 +20,7 @@ button {
   width: 10rem !important;
   height: 3.5rem;
   max-width: 150px;
-  margin: 0 0.5rem;
+  /* margin: 0 0.1rem; */
   z-index: 1;
 }
 
@@ -30,6 +30,19 @@ button {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
+
+#studyButton {
+  background-color: #E8334E;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#studyButton a {
+  color: white;
+  text-decoration: none;
+}
+
 
 /* 화면 크기가 작을 때의 스타일 */
 @media (max-width: 768px) {

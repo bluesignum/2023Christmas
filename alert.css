@@ -1,0 +1,43 @@
+.swal-overlay {
+  background-color: #000000B3;
+}
+
+.swal-title:first-child {
+  margin-top: 32px;
+}
+
+.swal-modal {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.swal-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 0px;
+  font-weight: 700;
+}
+
+.swal-text {
+  padding: 0px;
+  display: block;
+  margin: 12px;
+  font-size: 14px;
+  text-align: center;
+  font-family: Pretendard;
+}
+
+.swal-button {
+  border-radius: 10px;
+  background-color: #032B2B;
+  border: 0px;
+  font-size: 14px;
+  font-family: Pretendard;
+  font-weight: normal;
+  padding: 8px 12px;
+}
+
+.swal-footer {
+  margin-top: 0px;
+  overflow: hidden;
+}
